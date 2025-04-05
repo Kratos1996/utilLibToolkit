@@ -1,19 +1,18 @@
-Add it in your root build.gradle at the end of repositories:
+Add it in your settings.gradle.kts at the end of repositories:
 
 	dependencyResolutionManagement {
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 		repositories {
 			mavenCentral()
-			//maven { url 'https://jitpack.io' }
-   			maven { url = uri("https://jitpack.io") }
+			maven { url = uri("https://jitpack.io") }
 		}
 	}
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation ("com.github.Kratos1996:corelib:version@aar")
+	        implementation("com.github.Kratos1996:utilLibToolkit:Tag")
 	}
-Share this release:   [![](https://jitpack.io/v/Kratos1996/corelib.svg)](https://jitpack.io/#Kratos1996/corelib)
+Share this release:   [![](https://jitpack.io/v/Kratos1996/utilLibToolkit.svg)](https://jitpack.io/#Kratos1996/utilLibToolkit)
 
 Link
 That's it! The first time you request a project JitPack checks out the code, builds it and serves the build artifacts (jar, aar).
